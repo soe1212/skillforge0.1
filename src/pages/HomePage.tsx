@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Search, ShoppingCart, Globe, ChevronDown, Menu, X, User, LogOut, Bell, Heart, BookOpen, MessageCircle, Zap } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useSearch } from '../hooks/useSearch';
-import SearchResults from '../components/SearchResults';
+import SearchResults from './SearchResults';
 import { useAuth } from '../contexts/AuthContext';
 import { useCart } from '../contexts/CartContext';
 import LoginModal from './Auth/LoginModal';
