@@ -248,7 +248,6 @@ const Header = () => {
                         <Globe className="w-4 h-4 mr-2" />
                         Language: English
                       </button>
-                    </button>
                     <button
                       onClick={handleLogout}
                       className="flex items-center w-full px-4 py-2 text-red-600 hover:bg-red-50 text-left"
