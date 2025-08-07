@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, ShoppingCart, Globe, ChevronDown, Menu, X, User, LogOut, Bell, Heart, BookOpen, MessageCircle } from 'lucide-react';
+import { Search, ShoppingCart, Globe, ChevronDown, Menu, X, User, LogOut, Bell, Heart, BookOpen, MessageCircle, Zap } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useSearch } from '../hooks/useSearch';
 import SearchResults from './SearchResults';
@@ -18,6 +18,7 @@ const Header = () => {
   const [showSignupModal, setShowSignupModal] = useState(false);
   const [showCartModal, setShowCartModal] = useState(false);
   const [showNotifications, setShowNotifications] = useState(false);
+  const [showWishlist, setShowWishlist] = useState(false);
   
   const navigate = useNavigate();
   const { user, logout } = useAuth();
@@ -255,6 +256,7 @@ const Header = () => {
                       <LogOut className="w-4 h-4 mr-2" />
                       Sign Out
                     </button>
+                    </div>
                   </div>
                 )}
                 </div>
