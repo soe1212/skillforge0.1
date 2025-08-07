@@ -18,7 +18,6 @@ const Header = () => {
   const [showSignupModal, setShowSignupModal] = useState(false);
   const [showCartModal, setShowCartModal] = useState(false);
   const [showNotifications, setShowNotifications] = useState(false);
-  const [showNotifications, setShowNotifications] = useState(false);
   
   const navigate = useNavigate();
   const { user, logout } = useAuth();
@@ -65,12 +64,6 @@ const Header = () => {
     { id: 3, title: 'Assignment due', message: 'Your project submission is due tomorrow', time: '2d ago', unread: true }
   ];
 
-  const notifications = [
-    { id: 1, title: 'New course available', message: 'Advanced React Patterns is now live!', time: '2h ago', unread: true },
-    { id: 2, title: 'Course completed', message: 'Congratulations on completing Python Bootcamp!', time: '1d ago', unread: false },
-    { id: 3, title: 'Assignment due', message: 'Your project submission is due tomorrow', time: '2d ago', unread: true }
-  ];
-
   const switchToLogin = () => {
     setShowSignupModal(false);
     setShowLoginModal(true);
@@ -79,12 +72,6 @@ const Header = () => {
   return (
     <>
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200/20 shadow-sm">
-        {/* Top announcement bar */}
-        <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-center py-2 text-sm">
-          <span className="font-medium">🎉 New Year Sale: Get 50% off on all courses! Use code: NEWYEAR2025</span>
-          <button className="ml-2 text-purple-200 hover:text-white">×</button>
-        </div>
-        
         {/* Top announcement bar */}
         <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-center py-2 text-sm">
           <span className="font-medium">🎉 New Year Sale: Get 50% off on all courses! Use code: NEWYEAR2025</span>
